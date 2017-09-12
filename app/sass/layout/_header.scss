@@ -1,0 +1,261 @@
+/* =================================
+							HEADER
+================================= */
+
+.main-header {
+	font-family: "ProximaNovaLight", sans-serif;
+
+	&__top {
+		padding: 15px 0;
+		background-color: $color-gray;
+
+		.container {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			@include laptop {
+				flex-wrap: wrap;
+			}
+		}
+	}
+
+	&__bottom {
+		padding: 15px 0;
+
+		.container {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			@include tablets {
+				flex-wrap: wrap;
+			}
+
+			@media screen and (max-width: 640px) {
+				justify-content: center;
+			}
+		}
+	}
+}
+
+.company-contacts {
+	font-size: rem(16px);
+	flex-basis: 60%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	@include laptop {
+		/*order: 1;*/
+		flex-basis: 100%;
+		justify-content: flex-start;
+	}
+
+	@media screen and (max-width: 640px) {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	&__address {
+		margin: 0 15px 0 0;
+
+		@include laptop {
+			margin: 0 20px 0 0;
+		}
+
+		@media screen and (max-width: 640px) {
+			margin: 0 0 15px 0;
+		}
+
+		@include phones {
+			text-align: center;
+		}
+
+		&-text {
+			display: inline-block;
+			padding-left: 20px;
+			position: relative;
+
+			@include phones {
+				padding-right: 0;
+				display: inline;
+			}
+
+			&::before {
+				content: '';
+				position: absolute;
+				/*width: 10px;
+				height: 15px;
+				background: transparent url("../images/icon_point.png") no-repeat center;*/
+				left: 0;
+				top: 50%;
+				transform: translate(0, -50%);
+				@extend .icon-point;
+			}
+		}
+	}
+
+	&__call {
+		display: flex;
+		align-items: center;
+
+		@media screen and (max-width: 640px) {
+			flex-basis: 100%;
+			justify-content: center;
+		}
+
+		@include phones {
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}
+	}
+}
+
+.call {
+	&__num {
+		font-family: "ProximaNovaBold", sans-serif;
+		position: relative;
+		padding-left: 30px;
+		margin-right: 30px;
+		text-decoration: none;
+
+		@include phones {
+			margin: 0 15px 15px 15px;
+		}
+
+		&::before {
+			content: '';
+			position: absolute;
+			@extend .icon-call;
+			left: 0;
+			top: 50%;
+			transform: translate(0, -50%);
+		}
+	}
+
+	&__btn {
+		@include phones {
+			margin-bottom: 15px;
+		}
+	}
+}
+
+.cart {
+	display: flex;
+	align-items: center;
+	position: relative;
+
+	@include laptop {
+		flex-basis: 100%;
+		justify-content: flex-end;
+		margin-top: 15px;
+	}
+
+	@media screen and (max-width: 640px) {
+		justify-content: center;
+	}
+
+	@include phones {
+		margin-top: 0;
+	}
+
+	&__img {
+		@extend .icon-cart;
+	}
+
+	&__label {
+		font-family: "ProximaNovaBold", sans-serif;
+		text-decoration: none;
+		color: $font-color_light;
+		background-color: $color-red;
+		line-height: 24px;
+		width: 24px;
+		height: 24px;
+		border-radius: 50%;
+		text-align: center;
+		margin-left: -10px;
+		flex-shrink: 0;
+	}
+
+	&__full-order {
+		margin-left: 15px;
+
+		@include phones {
+			flex-basis: 0;
+		}
+	}
+}
+
+.full-order {
+	&__num,
+	&__price {
+		font-family: "ProximaNovaBold", sans-serif;
+	}
+}
+
+.company-info {
+	display: flex;
+	align-items: center;
+
+	@include phones {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	&__desc {
+		font-family: "ProximaNovaBold", sans-serif;
+		text-transform: uppercase;
+		margin-bottom: 0;
+		margin-left: 30px;
+
+		@include phones {
+			margin:0 15px;
+			font-size: rem(14px);
+		}
+	}
+}
+
+.logo {
+	&__link {
+		display: inline-block;
+	}
+
+	&__pic {
+		display: inline-block;
+	}
+}
+
+.form-search {
+	width: 30%;
+	position: relative;
+
+	@include laptop {
+		flex-basis: 40%;
+	}
+
+	@include tablets {
+		margin: 15px 0 0;
+		flex-basis: 70%;
+	}
+
+	@include phones {
+		flex-basis: 100%;
+	}
+
+}
+
+.yandex {
+	@include laptop {
+		display: none;
+	}
+
+	&__link {
+		display: inline-block;
+	}
+
+	&__pic {
+		display: inline-block;
+		width: 193px;
+	}
+}

@@ -1,0 +1,128 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-arrow-down {
+  background-image: url(../images/sprite.png);
+  background-position: -26px -117px;
+  width: 10px;
+  height: 7px;
+  display: inline-block;
+}
+.icon-arrow-next {
+  background-image: url(../images/sprite.png);
+  background-position: -62px -86px;
+  width: 11px;
+  height: 11px;
+}
+.icon-arrow-prev {
+  background-image: url(../images/sprite.png);
+  background-position: -127px -89px;
+  width: 11px;
+  height: 11px;
+}
+.icon-arrow-send {
+  background-image: url(../images/sprite.png);
+  background-position: -88px -86px;
+  width: 11px;
+  height: 11px;
+}
+.icon-arrow-up {
+  background-image: url(../images/sprite.png);
+  background-position: -51px -117px;
+  width: 10px;
+  height: 6px;
+  display: inline-block;
+}
+.icon-call {
+  background-image: url(../images/sprite.png);
+  background-position: -127px -32px;
+  width: 15px;
+  height: 15px;
+}
+.icon-car {
+  background-image: url(../images/sprite.png);
+  background-position: -43px 0px;
+  width: 29px;
+  height: 23px;
+}
+.icon-cart {
+  background-image: url(../images/sprite.png);
+  background-position: -39px -44px;
+  width: 28px;
+  height: 23px;
+}
+.icon-catalog {
+  background-image: url(../images/sprite.png);
+  background-position: -127px 0px;
+  width: 17px;
+  height: 17px;
+}
+.icon-catalog_arrow {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -117px;
+  width: 11px;
+  height: 8px;
+}
+.icon-desc {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -86px;
+  width: 22px;
+  height: 16px;
+}
+.icon-gift {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -44px;
+  width: 24px;
+  height: 27px;
+}
+.icon-pickup {
+  background-image: url(../images/sprite.png);
+  background-position: -87px -40px;
+  width: 24px;
+  height: 26px;
+}
+.icon-point {
+  background-image: url(../images/sprite.png);
+  background-position: -37px -86px;
+  width: 10px;
+  height: 15px;
+}
+.icon-price {
+  background-image: url(../images/sprite.png);
+  background-position: -87px 0px;
+  width: 25px;
+  height: 25px;
+}
+.icon-search {
+  background-image: url(../images/sprite.png);
+  background-position: -127px -62px;
+  width: 13px;
+  height: 12px;
+}
+.icon-step-next {
+  background-image: url(../images/sprite.png);
+  background-position: -159px 0px;
+  width: 6px;
+  height: 7px;
+}
+.icon-umbrella-small {
+  background-image: url(../images/sprite.png);
+  background-position: 0px 0px;
+  width: 28px;
+  height: 29px;
+}
